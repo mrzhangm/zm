@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<!-- 别名 -->	
+	<typeAliases>
+		<typeAlias type="com.zd.entity.userinfo" alias="users"/>
+		<typeAlias type="com.zd.entity.studentinfo" alias="stu"/>
+	</typeAliases>
+	<!-- 配置映射 -->
+	<mappers>
+		<mapper resource="com/zd/mapper/UserMapper.xml"/>
+		<mapper resource="com/zd/mapper/StuMapper.xml"/>
+	</mappers>
+</configuration>
